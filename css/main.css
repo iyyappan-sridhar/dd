@@ -1,0 +1,556 @@
+body {
+    background: linear-gradient(to right, #2D336B ,#7886C7, white );
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.container {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space between the items */
+  align-items: center; /* Vertically center the items */
+  padding: 20px;
+  height: 100vh; /* Make the container take up the full height of the viewport */
+}
+
+.navbar-nav {
+    
+    text-transform:capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    right: 100px;
+    
+ 
+}
+
+.nav-link {
+    color: black;
+    right: 50px;
+}
+.nav-link:hover{
+    background-color: rgb(0, 89, 255);
+    cursor: pointer;
+    border-radius: 1%;
+
+}
+.navbar-toggler:hover{
+    background-color:green;
+}
+.collaps.enavbar-collapse {
+    position: absolute;
+    justify-content: center;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    left:10px;
+    
+    
+    border-radius: 70%;
+}
+@media screen and  (min-width:120px) and (max-width:480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  }
+    .doctor {
+      position: relative;
+      left: 180px;
+      top: 90px;
+      height: 350px;
+    }
+    p{
+        color:white;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: capitalize;
+        font-size: 16px;
+        left:20px;
+        position: relative;
+        top: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+      color:whitesmoke;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      left: 20px;
+      top: 20px;
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+    /*.button {
+      color: black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      position: relative;
+      top:180px;
+      left: 30px;
+      padding: 5px;
+      margin: 5px;
+      text-decoration: none;
+      background-color:rgb(234, 244, 246);
+      text-transform: capitalize;
+      font-family: 'Times New Roman', Times, serif;
+      cursor: pointer; */ 
+/* button style and effect code */
+    .button {
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(to right, skyblue,whitesmoke);
+      color: black;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 12px 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      text-transform: uppercase;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      margin: 0;
+      top: 100px;
+      text-decoration: none;
+      left: 40px;
+      
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+
+    }
+    .button:hover {
+      background-color:gold;
+      
+    }
+  @media screen and (min-width:0px) and (max-width:480px) {
+    .doctor {
+      position:relative;
+      bottom: 10px;
+      left: 190px;
+      height: 400px;
+    }
+    h1 {
+      color:whitesmoke;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      left:30px;
+      top: 30px;
+      text-transform: capitalize;
+      font-size:25px;
+    }
+    p{
+      color:white;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: capitalize;
+      font-size: 25px;
+      left: 30px;
+      position: relative;
+      top: 50px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .button {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, skyblue,whitesmoke);
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    top: 100px;
+    text-decoration: none;
+    left: 40px;
+    
+  }
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  }
+  .button:hover {
+    background-color:gold;
+    
+  }
+    
+
+  @media screen and (min-width:481px) and (max-width:767px) {
+    .doctor {
+      position: relative;
+      left: 450px;
+      top: 10px;
+      height: 380px;
+    }
+    h1 {
+      color:whitesmoke;
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      left: 25px;
+      top: 20px;
+      text-transform: capitalize;
+      font-size:4rem;
+    }
+    p{
+      color:white;
+      font-family: 'Times New Roman', Times, serif;
+      text-transform: capitalize;
+      font-size: 25px;
+      left: 30px;
+      position: relative;
+      top: 50px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .button {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, skyblue,whitesmoke);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    top: 100px;
+    text-decoration: none;
+    left: 40px;
+    
+  }
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+
+  }
+  .button:hover {
+    background-color:gold;
+    
+  }
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .doctor {
+    position:relative;
+    left: 550px;
+    height: 480px;
+  }
+  h1 {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    text-transform: capitalize;
+    font-size:4rem;
+  }
+  p{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    left: 30px;
+    position: relative;
+    top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button {
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, skyblue,whitesmoke);
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  top: 100px;
+  text-decoration: none;
+  left: 40px;
+  
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+}
+.button:hover {
+  background-color:gold;
+  
+}
+@media screen and (min-width:1025px) and (max-width:1200px) {
+  .doctor {
+    position:relative;
+    left: 550px;
+    height: 680px;
+  }
+  h1 {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    text-transform: capitalize;
+    font-size:4rem;
+  }
+  p{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    left: 30px;
+    position: relative;
+    top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button {
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, skyblue,whitesmoke);
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  top: 100px;
+  text-decoration: none;
+  left: 40px;
+  
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+}
+.button:hover {
+  background-color:gold;
+  
+}
+@media screen and (min-width:1201px) {
+
+  .doctor { 
+    height: 800px;
+    position: absolute;
+    left: 1050px;
+    bottom: 0px;
+   
+
+  }
+  h1 {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-transform: capitalize;
+    font-size:5rem;
+  }
+  p{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button {
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, skyblue,whitesmoke);
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  top: 100px;
+  text-decoration: none;
+  left: 40px;
+  
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+}
+.button:hover {
+  background-color:gold;
+  
+}  
+  
+.from {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+/* General Styles */
+
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+    z-index: -1;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  
+  }
+  
+  
+  /* Glass Card */
+
+.glass-card {
+    align-items: center;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    background-color: rgb(246, 249, 249);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite ease-in-out;
+}
+.glass-card h4 {
+    font-size: 2rem;
+    color:black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.glass-card .subtitle {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+/* Form Styles */
+.review-form .form-group {
+    margin-bottom: 20px;
+  }
+  .review-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: black;
+  }
+  .review-form input[type="text"],
+  .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid bla;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: black;
+  }
+  .review-form textarea {
+    resize: vertical;
+  }
+  .review-form input::placeholder,
+  .review-form textarea::placeholder {
+    color: black;
+  }
+  /* Star Rating */
+  .star-rating {
+    display: flex;
+    gap: 5px;
+  }
+  .star-rating .star {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s ease;
+  }
+  .star-rating .star.active,
+  .star-rating .star:hover {
+    color:gold;
+  }
+  
+  /* Submit Button */
+  .review-form button {
+    width: 100%;
+    padding: 10px;
+    position:inherit;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 1rem;
+    color:black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .review-form button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
